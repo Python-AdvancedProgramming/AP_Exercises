@@ -1,0 +1,21 @@
+def display_cart(items: list[tuple[str, float]]) -> None:
+    """
+    Display cart items with numbers and total.
+    
+    Example output:
+    1. Laptop - CHF999.99
+    2. Mouse - CHF29.99
+    Total: CHF1029.98
+    """
+    total = 0.0
+    
+    for num, (name, price) in enumerate(items, start=1):
+        print(f"{num}. {name} - CHF{price:.2f}")
+        total += price
+    
+    print(f"Total: CHF{total:.2f}")
+
+
+# Test with:
+cart = [("Laptop", 999.99), ("Mouse", 29.99), ("Keyboard", 79.99)]
+display_cart(cart)
