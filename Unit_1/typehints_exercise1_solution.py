@@ -5,6 +5,7 @@ def invoice_total(net_amount: float, vat_rate: float | None = None) -> float:
     """
     Returns the invoice total for a net amount.
     If vat_rate is None, no VAT is applied.
+    If a parameter has a default value, it becomes optional when calling the function.
     """
     if vat_rate is None:
         return net_amount
@@ -13,3 +14,4 @@ def invoice_total(net_amount: float, vat_rate: float | None = None) -> float:
 
 if __name__ == "__main__":
     print(f"{invoice_total(3.45, 2.5):,.2f}")
+    print(invoice_total(3.45))
