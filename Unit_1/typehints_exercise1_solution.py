@@ -12,4 +12,4 @@ def invoice_total(net_amount: float, vat_rate: float | None = None) -> float:
 
 
 if __name__ == "__main__":
-    print(invoice_total(3.45, 2.5))
+    print(f"{invoice_total(3.45, 2.5):,.2f}")
