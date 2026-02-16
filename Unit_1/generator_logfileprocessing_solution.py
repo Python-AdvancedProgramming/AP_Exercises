@@ -1,4 +1,8 @@
 from typing import Iterable, Iterator
+# An Iterable is: Something you can loop over
+
+# An Iterator is: An object that produces values one at a time and remembers its state:
+# A function using yield returns a generator object, which is an Iterator.
 
 logs = [
     "INFO: Server started",

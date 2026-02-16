@@ -19,3 +19,9 @@ def apply_discount(price: float, discount: int | float | None) -> float:
         factor = discount
 
     return price * (1 - factor)
+
+
+if __name__ == "__main__":
+    print(apply_discount(100, 4))
+    print(apply_discount(100, None))
+    print(apply_discount(100, 0.25))

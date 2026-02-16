@@ -5,6 +5,7 @@ def fibonacci():
         yield a
         a, b = b, a + b
 
+
 fib_gen = fibonacci()
 
 for _ in range(10):

@@ -4,6 +4,7 @@
 
 from typing import Iterable
 
+
 def search_customers(customers: Iterable[str], keyword: str | None) -> list[str]:
     """
     Returns customers whose name contains keyword (case-insensitive).
@@ -16,4 +17,9 @@ def search_customers(customers: Iterable[str], keyword: str | None) -> list[str]
 
     k = keyword.lower()
     return [c for c in customer_list if k in c.lower()]
- 
+
+
+if __name__ == "__main__":
+    customers = ("Becker", "Nadal", "Federer")
+    keyword = "Fed"
+    print(search_customers(customers, keyword))

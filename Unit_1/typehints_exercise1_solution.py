@@ -9,3 +9,7 @@ def invoice_total(net_amount: float, vat_rate: float | None = None) -> float:
     if vat_rate is None:
         return net_amount
     return net_amount * (1 + vat_rate)
+
+
+if __name__ == "__main__":
+    print(invoice_total(3.45, 2.5))
