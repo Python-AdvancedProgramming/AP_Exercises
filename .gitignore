@@ -1,0 +1,20 @@
+# Minimal .gitignore for Python projects
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# IDE settings
+.vscode/
+.idea/
+
+# Local env files
+.env
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+ 
