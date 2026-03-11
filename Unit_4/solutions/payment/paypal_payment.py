@@ -1,7 +1,4 @@
-try:
-    from .payment_method import PaymentMethod
-except ImportError:
-    from payment_method import PaymentMethod
+from payment_method import PaymentMethod
 
 
 class PayPalPayment(PaymentMethod):
