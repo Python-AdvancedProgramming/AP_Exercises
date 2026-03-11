@@ -37,7 +37,7 @@ Subclass of `PaymentMethod`.
 
 - Additional attributes:
   - `card_number` (string)
-- Implement `process_payment()` to return a message similar to: ```Processing credit card payment of CHF 50```
+- Implement `process_payment()` to return a message similar to: ```Processing credit card payment of CHF {self.amount} with {self.card_number}```
 
 ---
 
@@ -46,7 +46,7 @@ Subclass of `PaymentMethod`.
 
 - Additional attributes:
   - `email` (string)
-- Implement `process_payment()` to return a message similar to: ```Processing PayPal payment of CHF 50```
+- Implement `process_payment()` to return a message similar to: ```Processing PayPal payment of CHF {self.amount} with {self.email}```
 
 ---
 
@@ -56,7 +56,7 @@ Subclass of `PaymentMethod`.
 - Additional attributes:
   - `iban` (string)
 - Implement `process_payment()` to return a message similar to: 
-```Processing bank transfer of CHF 50```
+```Processing bank transfer of CHF {self.amount} with {self.iban}```
 
 ---
 
