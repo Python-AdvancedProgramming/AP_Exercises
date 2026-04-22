@@ -1,44 +1,22 @@
 # 🧩 Design Patterns
 
-## 📌 Topics Covered
+## 📌 Project Task
 
-- **Introduction**
-  - What Are Design Patterns?
-  - Historical Context - The Gang Of Four (GoF)
-  - The GoF Design Patterns Catalog
+Task: Consider now where to apply these patterns in your project.
 
-- **Foundations for Design Patterns**
-  - Interfaces for High Cohesion and Loose Coupling
-  - Abstract Base Classes as Interfaces
-  - Inheritance and Composition
-  - How to Read and Apply Design Patterns
+Implement design patterns that solve problems and offer useful trade-offs with advantages. This should be the case for:
 
-- **Selected Design Patterns**
-  - Strategy
-  - Facade
-  - Adapter
-  - Composite
-  - Singleton
-  - Model-View-Controller (MVC)
+- **Strategy** for general flexibility and maintainability
+- **Singleton** such as for database access
+- **MVC** to separate UI, control flow and model data
+- and possibly also **Adapter**, **Facade**, and **Composite**
 
-- **Conclusion**
-  - When to Use Design Patterns
-  - Outlook and Project Task
+Goal: a clear design with code reuse as in *Don't Repeat Yourself* (*DRY*), maintainability, extensibility, minimized dependencies, and flexibility.
 
-## 📁 Folder Structure
+However, *Keep It Simple* (*KISS*): consider the tradeoffs and prefer simple solutions over complex ones.
 
-- **01_foundations_slide_examples**
-  - `01_abc_interface_recap.py`
+## 🐍 Guidance
 
-- **02_design_patterns_slide_examples**
-  - `01_strategy.py`
-  - `02_facade.py`
-  - `03_adapter.py`
-  - `04_composite.py`
-  - `05_singleton.py`
-  - `06_mvc.py`
-
-## 🐍 Notes
-
-- The Python files mirror the examples used in the lecture slides.
-- Each example is stored as a standalone script so it can be opened and run independently.
+- Consider the minimal examples in `material/AP_Examples/Unit_8` as reference implementations.
+- Apply a pattern only where it solves a real problem in your project and brings useful trade-offs.
+- Prefer the simplest design that still improves structure, maintainability, and flexibility.
