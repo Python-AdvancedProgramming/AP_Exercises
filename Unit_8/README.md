@@ -2,28 +2,28 @@
 
 ## 📌 Topics Covered
 
-1. **Introduction**
-  – What Are Design Patterns?
-  – Historical Context – The Gang Of Four (GoF)
-  – The GoF Design Patterns Catalog
+- **Introduction**
+  - What Are Design Patterns?
+  - Historical Context - The Gang Of Four (GoF)
+  - The GoF Design Patterns Catalog
 
-2. **Foundations for Design Patterns**
-  – Interfaces for High Cohesion and Loose Coupling
-  – Abstract Base Classes as Interfaces
-  – Inheritance and Composition
-  – How to Read and Apply Design Patterns
+- **Foundations for Design Patterns**
+  - Interfaces for High Cohesion and Loose Coupling
+  - Abstract Base Classes as Interfaces
+  - Inheritance and Composition
+  - How to Read and Apply Design Patterns
 
-3. **Selected Design Patterns**
+- **Selected Design Patterns**
   - Strategy
   - Facade
   - Adapter
   - Composite
   - Singleton
-  - Model–View–Controller (MVC)
+  - Model-View-Controller (MVC)
 
-4. **Conclusion**
-– When to Use Design Patterns
-– Outlook and Project Task
+- **Conclusion**
+  - When to Use Design Patterns
+  - Outlook and Project Task
 
 ## 📁 Folder Structure
 
