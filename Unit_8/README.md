@@ -17,6 +17,6 @@ However, *Keep It Simple* (*KISS*): consider the tradeoffs and prefer simple sol
 
 ## 🐍 Guidance
 
-- Consider the minimal examples in `material/AP_Examples/Unit_8` as reference implementations.
+- Consider the examples provided in the repository.
 - Apply a pattern only where it solves a real problem in your project and brings useful trade-offs.
 - Prefer the simplest design that still improves structure, maintainability, and flexibility.
