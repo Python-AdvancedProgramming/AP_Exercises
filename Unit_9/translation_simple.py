@@ -67,4 +67,4 @@ with ui.card().style("width: 700px; padding: 24px;"):
     show_translation()
 
 
-ui.run()
+ui.run(reload=True)
