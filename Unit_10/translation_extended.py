@@ -45,9 +45,13 @@ class TranslationApp:
     def build(self):
         with ui.column().classes(
             "w-full min-h-screen items-center justify-center bg-gray-100 p-8"
+            # min-h-screen = It gives the container a minimum height equal to the browser window height
         ):
             with ui.card().classes("w-full max-w-4xl p-8 shadow-lg rounded-lg"):
+                # w-full max-w-4xl = Grow to available width, but never exceed 4xl size
+                # max-w-4xl = 56rem => 896px (56*16px)
                 with ui.column().classes("w-full gap-5"):
+                    # gap-5 => 20px
 
                     ui.label("English to German Translator").classes(
                         "text-4xl font-bold"
@@ -62,8 +66,11 @@ class TranslationApp:
                     textarea.bind_value(self.model, "english_text")
 
                     with ui.row().classes("w-full justify-between items-center"):
+                        # Make the flex row take full width, place children at opposite ends horizontally,
+                        # and vertically center-align them
                         with ui.row().classes("gap-3"):
-                            ui.button("Translate to German", on_click=self.translate)
+                            ui.button("Translate to German",
+                                      on_click=self.translate)
                             ui.button(
                                 "Clear text / Text löschen",
                                 on_click=self.clear_text,
@@ -85,4 +92,4 @@ class TranslationApp:
 app = TranslationApp()
 app.build()
 
-ui.run()
+ui.run(reload=True)
