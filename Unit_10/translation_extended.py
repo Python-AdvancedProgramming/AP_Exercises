@@ -61,6 +61,7 @@ class TranslationApp:
                     textarea = ui.textarea(
                         label="English text",
                         placeholder="Write something in English...",
+                        # 56 × 0.25rem = 14rem => 14*16px = 224px
                     ).classes("w-full h-56")
 
                     textarea.bind_value(self.model, "english_text")
