@@ -85,7 +85,9 @@ class TranslationApp:
     @ui.refreshable
     def translation_area(self):
         with ui.card().classes("w-full bg-blue-50 p-6"):
+            # font-semibold   -> moderately bold
             ui.label("German translation").classes("text-lg font-semibold")
+            # text-base = 16px font size
             ui.label(self.model.german_text).classes("text-base")
 
 
